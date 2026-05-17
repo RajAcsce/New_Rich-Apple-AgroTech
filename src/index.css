@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: #272c1d;
+    --color-secondary: #5c6642;
+    --color-accent: #bc6c18;
+    --color-accent-hover: #8a4e12;
+    --color-bg-light: #faf8f0;
+    --color-bg-dark: #0a0a0a;
+    --color-card: #f5f3eb;
+    --color-border: #e5e2d8;
+    --color-golden-glass: rgba(255, 252, 240, 0.72);
+    --color-dark-overlay: rgba(0, 0, 0, 0.45);
+
+    --background: 44 33% 96%;
+    --foreground: 78 19% 14%;
+    --card: 44 20% 94%;
+    --card-foreground: 78 19% 14%;
+    --popover: 44 33% 96%;
+    --popover-foreground: 78 19% 14%;
+    --primary: 78 19% 14%;
+    --primary-foreground: 44 33% 96%;
+    --secondary: 44 20% 94%;
+    --secondary-foreground: 78 19% 14%;
+    --muted: 44 20% 94%;
+    --muted-foreground: 72 21% 32%;
+    --accent: 33 75% 41%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 40 14% 88%;
+    --input: 40 14% 88%;
+    --ring: 33 75% 41%;
+    --radius: 0.5rem;
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--color-primary);
+    background-color: var(--color-bg-light);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .font-serif {
+    font-family: 'Cormorant Garamond', serif;
+  }
+
+  .font-sans {
+    font-family: 'DM Sans', sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Scrollbar hide for testimonial slider */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
